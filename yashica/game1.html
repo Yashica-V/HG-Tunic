@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<title>Grid Image</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title> Music player </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+game
+img {
+
+height: 100%;
+
+}
+h1{
+    color: aliceblue;
+    background-color: gray;
+}
+
+.wrapper {
+
+max-width: 800px;
+
+}
+
+p{
+    color: aliceblue;
+}
+body {
+        margin: 0;
+        padding: 0;
+        background: url("bg9.jpg");
+           background-size: cover; 
+    }
+    
+</style>
+
+
+
+<body class="bg-light">
+    
+
+
+
+
+    
+
+<section class="home-section">
+   
+    <div class="carousel">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 1.png" class="active">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 2.png" >
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 3.png" >
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 4.png" >
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 5.png" >
+    </div>
+
+   
+    <h1 class="heading">Recently played</h1>
+    <div class="playlists-group">
+    <div class="playlist-card">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 9.png" class="playlist-card-img" >
+        <p class="playlist-card-name">Top International</p>
+    </div>
+    <div class="playlist-card">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 2.png" class="playlist-card-img" >
+        <p class="playlist-card-name">BTS collection</p>
+    </div>
+    <div class="playlist-card">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 10.png" class="playlist-card-img" >
+        <p class="playlist-card-name">Bollywood Hits</p>
+    </div>
+    <div class="playlist-card">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 11.png" class="playlist-card-img" >
+        <p class="playlist-card-name">Top 50</p>
+    </div>
+    <div class="playlist-card">
+        <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 5.png" class="playlist-card-img" >
+        <p class="playlist-card-name">Justin Biber</p>
+    </div>
+
+
+</section>
+
+<section class="music-player-section active">
+
+    <img src="C:\Users\Deepshika\Desktop\yashica\yashica/back.png" class="back-btn icon hide" >
+    <img src="C:\Users\Deepshika\Desktop\yashica\yashica/nav.png" class="nav-btn icon hide" >
+
+    <h1 class="current-song-name">Enchanted</h1>
+    <p class="artist-name hide">JB</p>
+    <audio src="Enchanted.mp3"></audio> 
+
+    <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 1.png" class="cover hide" >
+
+    <div class="seek-bar-container">
+        <input type="range" class="music-seek-bar" value="0">
+        <p class="current-time hide">00 : 00</p>
+        <p class="duration hide">00 : 00</p>
+    </div>
+
+    <div class="controls">
+        <span class="fas fa-redo"></span>
+        <div class="main">
+            <i class="fas fa-backward active"></i>
+            <i class="fas fa-play active"></i>
+            <i class="fas fa-pause"></i>
+            <i class="fas fa-forward active"></i>
+        </div>
+        <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+        <span class="fas fa-volume-up"></span>
+    </div>
+
+</section>
+
+<section class="playlist active">
+
+    <img src="C:\Users\Deepshika\Desktop\yashica\yashica/back.png" class="back-btn icon" alt="">
+
+    <h1 class="title">Playlist</h1>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 1.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Daylight.mp3" controls></audio></i>
+            
+        </div>
+        <p class="name">Daylight</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 2.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Fortnight.mp3" controls></audio></i>
+        </div>
+        <p class="name">Fortnight</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 3.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Faded.mp3" controls></audio></i>
+        </div>
+        <p class="name">Faded</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 4.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Lean On.mp3" controls></audio></i>
+        </div>
+        <p class="name">Lean On</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 5.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Friendly Fire.mp3" controls></audio></i>        </div>
+        <p class="name">Friendly Fire</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 6.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="Enchanted.mp3" controls></audio></i>        </div>
+        <p class="name">Enchanted</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 7.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Nean Nights.mp3" controls></audio></i>        </div>
+        <p class="name">Nean Nights</p>
+    </div>
+
+    <div class="queue active">
+        <div class="queue-cover">
+            <img src="C:\Users\Deepshika\Desktop\yashica\yashica/cover 8.png" alt="">
+            <i style="width: 20px;" class="fas fa-pause"><audio src="./Loner.mp3" controls></audio></i>        </div>
+        <p class="name">Loner</p>
+    </div>
+    
+</section>
+
+
+<script src="data.js"></script>
+<script src ="app.js" ></script>
+<script src="game.js"></script>
+</body></html>
